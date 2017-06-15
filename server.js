@@ -14,10 +14,10 @@ server.listen(process.env.PORT, test());
 
 var index_html = fs.readFileSync("public/index.html");
 var error = fs.readFileSync("public/404.html");
-var konami_html = fs.readFileSync("public/konami.html");
+var match_html = fs.readFileSync("public/match.html");
 var off_html = fs.readFileSync("public/off.html");
 var on_html = fs.readFileSync("public/on.html");
-var sans_html = fs.readFileSync("public/sans.html");
+var finish_html = fs.readFileSync("public/finish.html");
 var shapes_html = fs.readFileSync("public/shapes.html");
 var sides_html = fs.readFileSync("public/sides.html");
 
@@ -36,10 +36,10 @@ function requestHandler(req, res) {
     res.end();
   }
 
-  else if (req.url === "/konami.html") {
+  else if (req.url === "/match.html") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.write(konami_html);
+    res.write(match_html);
     res.end();
   }
 
@@ -57,10 +57,10 @@ function requestHandler(req, res) {
     res.end();
   }
 
-  else if (req.url === "/sans.html") {
+  else if (req.url === "/finish.html") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.write(sans_html);
+    res.write(finish_html);
     res.end();
   }
 
