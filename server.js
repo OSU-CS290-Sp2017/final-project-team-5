@@ -27,6 +27,10 @@ var style7_css = fs.readFileSync("public/style7.css");
 var match_js = fs.readFileSync("public/match.js");
 var shapes_js = fs.readFileSync("public/shapes.js");
 var uuddlrlrba_js = fs.readFileSync("public/uuddlrlrba.js");
+var style1_css = fs.readFileSync("public/style1.css");
+var style2_css = fs.readFileSync("public/style2.css");
+var off_js = fs.readFileSync("public/off.js");
+var on_js = fs.readFileSync("public/on.js");
 
 
 function requestHandler(req, res) {
@@ -132,6 +136,34 @@ function requestHandler(req, res) {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/javascript");
     res.write(uuddlrlrba_js);
+    res.end();
+  }
+
+  else if(req.url === "/style1.css") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/css");
+    res.write(style1_css);
+    res.end();
+  }
+
+  else if(req.url === "/style2.css") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/css");
+    res.write(style2_css);
+    res.end();
+  }
+
+  else if (req.url === "/off.js") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/javascript");
+    res.write(off_js);
+    res.end();
+  }
+
+  else if (req.url === "/on.js") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/javascript");
+    res.write(on_js);
     res.end();
   }
 
