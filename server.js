@@ -19,7 +19,7 @@ var off_html = fs.readFileSync("public/off.html");
 var on_html = fs.readFileSync("public/on.html");
 var finish_html = fs.readFileSync("public/uuddlrlrba.html");
 var shapes_html = fs.readFileSync("public/shapes.html");
-var sides_html = fs.readFileSync("public/sides.html");
+var numberofsides_html = fs.readFileSync("public/numberofsides.html");
 var error_css = fs.readFileSync("public/404.css");
 var style5_css = fs.readFileSync("public/style5.css");
 var style6_css = fs.readFileSync("public/style6.css");
@@ -31,6 +31,8 @@ var style1_css = fs.readFileSync("public/style1.css");
 var style2_css = fs.readFileSync("public/style2.css");
 var off_js = fs.readFileSync("public/off.js");
 var on_js = fs.readFileSync("public/on.js");
+var style3_css = fs.readFileSync("public/style3.css");
+var numberofsides_js = fs.readFileSync("public/numberofsides.js");
 
 
 function requestHandler(req, res) {
@@ -83,10 +85,10 @@ function requestHandler(req, res) {
     res.end();
   }
 
-  else if (req.url === "/sides.html") {
+  else if (req.url === "/numberofsides.html") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.write(sides_html);
+    res.write(numberofsides_html);
     res.end();
   }
 
@@ -153,6 +155,13 @@ function requestHandler(req, res) {
     res.end();
   }
 
+  else if(req.url === "/style3.css") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/css");
+    res.write(style3_css);
+    res.end();
+  }
+
   else if (req.url === "/off.js") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/javascript");
@@ -164,6 +173,13 @@ function requestHandler(req, res) {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/javascript");
     res.write(on_js);
+    res.end();
+  }
+
+  else if (req.url === "/numberofsides.js") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/javascript");
+    res.write(numberofsides_js);
     res.end();
   }
 

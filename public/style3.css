@@ -1,0 +1,118 @@
+body {
+        background-color:black;
+        color: white;
+}
+
+h1 {
+        margin: 0px;
+        padding: 10px;
+        font-size: 30px;
+        color: #e07200;
+        background-color: #999999;
+        border-color: #999999;
+}
+
+
+ul.names {
+        position: relative;
+        width: 100%;
+        margin: 3px;
+        padding: 0px;
+}
+
+li {
+        display: inline;
+        margin: 10px;
+        padding-bottom: 5px;
+        color: white;
+}
+
+button#get-hint-button {
+        position: fixed;
+        left: 50px;
+        bottom: 50px;
+        color: #e07200;
+        background-color: #999999;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border-style: none;
+        border: none;
+        font-size: 30px;
+}
+
+button#triangle {
+	border-style: solid;
+	border-color: black;
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	left:100px;
+	top: 100px;
+}
+
+button#square {
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        left:350px;
+        top: 400px;
+}
+
+button#pentagon {
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        left: 350px;
+        top: 100px;
+}
+
+button#hexagon {
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        left:100px;
+        top: 400px;
+}
+
+button#heptagon {
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+	position: fixed;
+        left:600px;
+        top: 400px;
+}
+
+button#octogon {
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        left: 600px;
+        top: 100px;
+}
+
+
+
+
