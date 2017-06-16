@@ -1,0 +1,69 @@
+body {
+	background-color:black;
+	color: white;
+}
+
+h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 30px;
+	color: #e07200;
+	background-color: #999999;
+	border-color: #999999;
+}
+
+
+ul.names {
+	position: relative;
+	width: 100%;
+	margin: 3px;
+	padding: 0px;
+}
+
+li {
+	display: inline;
+	margin: 10px;
+	padding-bottom: 5px;
+	font-size: 20;
+	color: white;
+}
+
+button#get-hint-button {
+	position: fixed;
+	left: 50px;
+	bottom: 50px;
+	color: #e07200;
+	background-color: #999999;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-style: none;
+	border: none;
+	font-size: 30px;
+}
+article {
+	position: absolute;
+	left: 400px;
+	top: 200px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+
+}
+
+.text {
+	font-family: "Comic Sans MS"	
+}
+
+.key {
+	font-family: "Courier New"
+}
+
+img {
+	position: absolute;
+	bottom: 0px;
+	left: 400px;
+}
+
+
+

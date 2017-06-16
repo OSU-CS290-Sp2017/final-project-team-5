@@ -1,0 +1,31 @@
+body {
+        background-color:black;
+        color: white;
+}
+
+h1 {
+        margin: 0px;
+        padding: 10px;
+        font-size: 30px;
+        color: #e07200;
+        background-color: #999999;
+        border-color: #999999;
+}
+
+
+ul.names {
+        position: relative;
+        width: 100%;
+        margin: 3px;
+        padding: 0px;
+}
+
+li {
+        display: inline;
+        margin: 10px;
+        padding-bottom: 5px;
+        font-size: 20;
+        color: white;
+}
+
+
